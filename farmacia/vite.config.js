@@ -7,5 +7,7 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:3306', // redirige /api a tu backend
     },
+    allowedHosts: 'all',
+    host: true,    
   },
 });
