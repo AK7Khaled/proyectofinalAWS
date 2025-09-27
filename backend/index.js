@@ -408,8 +408,9 @@ app.post('/api/ventas', verifyToken, (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+const SERVERBACKEND = process.env.DB_HOST
 app.listen(PORT, () => {
-    console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor backend corriendo en ${SERVERBACKEND}:${PORT}`);
 });
 
 
