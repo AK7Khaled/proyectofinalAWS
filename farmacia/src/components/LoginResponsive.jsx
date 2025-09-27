@@ -36,7 +36,7 @@ export default function Login() {
     setIsLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/login', { 
+      const res = await axios.post('farmaciadb.c1qy26iwyklf.us-east-2.rds.amazonaws.com:5000/api/login', { 
         email: email.trim(), 
         password 
       });
